@@ -35,3 +35,6 @@ MCM menu:
 
 ![image](https://github.com/user-attachments/assets/ba11527e-3518-49f6-b270-1d122b6c59dc)
 
+## Planned
+In the future I will probably just find a better way to do this. This was the quickest way for me not the best.  
+I will find a way to avoid moving items between player inventory and stash altogether.
