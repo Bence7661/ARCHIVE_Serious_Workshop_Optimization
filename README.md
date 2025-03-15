@@ -1,14 +1,24 @@
-# Workshop optimization
+# [V1.0.0] Workshop optimization
 This mod stops the `Portable Workshop` from moving its stash to player inventory.  
 This way the lag upon opening/closing the workbench of the portable workshop is completely eliminated.
 
+## Installation
+This mod overwrites some the following mod's files/patches (make sure that the priority is set higher than that of the mentioned mods/patches)  
+
+**Mod overwrites:**
+- `SixSloth's & Veerserif's Hideout Furnitures 2.2.1 GAMMA patch`
+  - File overwritten: `zzz_workshop_return_items.script`
+- `286- High-level Toolkits Include Low-level Toolkits - ilrathcxv`
+  - File overwritten: `z_monkey_toolkit_workshop.script`
+- `141- Fixed Crafting with Multi-Use Items - thisisntmysteamid`
+  - File overwritten: `zzz_timsi_ui_workshop`
+ 
+**File overwrites:**
+- `ui_furniture_workshop.script`
+- `ui_workshop.script`
+
 ## Known issue(s)
-- Since inventory is no longer moved the tools that are in the workshop stash are not available. Expect a fix very soon.
+- None
 
 ## Planned
-- Either move tools (Gunsmithing, Drug making kit etc...) to player inventory or find a way to "register" them to the workshop too.  
-I think I will just move those to player inventory since that has 0 overhead and is much easier to do.
-- Clean up files/code.
-
-## Installation
-This mod overwrites files from `SixSloth's & Veerserif's Hideout Furnitures 2.2.1 GAMMA patch`, so make sure that the priority is set higher than that of the mentioned mod/patch.
+- None
