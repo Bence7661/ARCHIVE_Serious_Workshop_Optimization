@@ -2,6 +2,9 @@
 This mod stops the `Portable Workshop` from moving its stash to player inventory.  
 This way the lag upon opening/closing the workbench of the portable workshop is completely eliminated.
 
+## Known issue(s)
+- Since inventory is no longer moved the tools that are in the workshop stash are not available. Expect a fix very soon.
+
 ## Planned
 - Either move tools (Gunsmithing, Drug making kit etc...) to player inventory or find a way to "register" them to the workshop too.  
 I think I will just move those to player inventory since that has 0 overhead and is much easier to do.
