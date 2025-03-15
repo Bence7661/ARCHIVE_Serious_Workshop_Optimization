@@ -3,7 +3,8 @@ This mod stops the `Portable Workshop` from moving its stash to player inventory
 This way the lag upon opening/closing the workbench of the portable workshop is completely eliminated.
 
 ## Installation
-This mod overwrites some the following mod's files/patches (make sure that the priority is set higher than that of the mentioned mods/patches)  
+This mod overwrites some the following mod's files/patches (make sure that the priority is set higher than that of the mentioned mods/patches).  
+It's fine to just install with highest priority.
 
 **Mod overwrites:**
 - `SixSloth's & Veerserif's Hideout Furnitures 2.2.1 GAMMA patch`
