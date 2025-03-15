@@ -1,4 +1,4 @@
-# [V1.0.0] Workshop optimization
+# [V1.0.1] Workshop optimization
 This mod stops the `Portable Workshop` from moving its stash to player inventory.  
 This way the lag upon opening/closing the workbench of the portable workshop is completely eliminated.
 
@@ -23,3 +23,8 @@ It's fine to just install with highest priority.
 
 ## Planned
 - None
+
+## Changelog
+v1.0.0 -> v1.0.1  
+- Fixed pocket workshop crash on trying to open it.
+- Added extra check for stash object to make sure it is never nil when trying to work with it.
