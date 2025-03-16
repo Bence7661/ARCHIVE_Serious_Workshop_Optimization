@@ -1,4 +1,4 @@
-# [V1.0.1] Workshop optimization
+# [V1.0.2] Workshop optimization
 This mod stops the `Portable Workshop` from moving its stash to player inventory.  
 This way the lag upon opening/closing the workbench of the portable workshop is completely eliminated.
 
@@ -18,6 +18,9 @@ It's fine to just install with highest priority.
 - `ui_furniture_workshop.script`
 - `ui_workshop.script`
 
+**Monkey patch**
+- `z_serious_monkey_ui_debug_launcher.script`: Patches the workshop opening script to include artefact melter too.
+
 ## Known issue(s)
 - None
 
@@ -28,3 +31,7 @@ It's fine to just install with highest priority.
 v1.0.0 -> v1.0.1  
 - Fixed pocket workshop crash on trying to open it.
 - Added extra check for stash object to make sure it is never nil when trying to work with it.
+
+v1.0.1 -> v1.0.2  
+- Fixed crash when opening toolkit outside of workshop.
+- Arfetact melter is now included in pocket workshop.
