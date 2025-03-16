@@ -25,7 +25,15 @@ It's fine to just install with highest priority.
 - `zzzzz_ui_workshop_repair_patch.script`: Patches weapon part replacement logic.
 
 ## Known issue(s)
-- None
+**Artefact crafting**  
+When components in stash: For some artefacts materials used are not consumed during crafting + almost all artefacts are not rewarded at the end of crafting.
+
+These have no problem:  
+- Hearth of the oasis
+- Volat emerald
+
+This for some reason get's crafted but it won't consume the 2 artefacts used
+- Knot
 
 ## Planned
 - None
