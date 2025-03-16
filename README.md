@@ -1,4 +1,4 @@
-# [V1.0.2] Workshop optimization
+# [V1.0.3] Workshop optimization
 This mod stops the `Portable Workshop` from moving its stash to player inventory.  
 This way the lag upon opening/closing the workbench of the portable workshop is completely eliminated.
 
@@ -13,6 +13,8 @@ It's fine to just install with highest priority.
   - File overwritten: `z_monkey_toolkit_workshop.script`
 - `141- Fixed Crafting with Multi-Use Items - thisisntmysteamid`
   - File overwritten: `zzz_timsi_ui_workshop`
+- Either `Momopate's Barrel Condition Effects Display` or `SERIOUS Weapon Maintain Features 'n fixes` if you have mine installed.
+  - Overwrites the monkey patch found in `zzzz_arti_jamming_repairs.script`. NOTE: DOES NOT OVERWRITE FILE. ONLY THE MONKEY PATCH FOUND IN SAID FILE
  
 **File overwrites:**
 - `ui_furniture_workshop.script`
@@ -20,6 +22,7 @@ It's fine to just install with highest priority.
 
 **Monkey patch**
 - `z_serious_monkey_ui_debug_launcher.script`: Patches the workshop opening script to include artefact melter too.
+- `zzzzz_ui_workshop_repair_patch.script`: Patches weapon part replacement logic.
 
 ## Known issue(s)
 - None
@@ -35,3 +38,7 @@ v1.0.0 -> v1.0.1
 v1.0.1 -> v1.0.2  
 - Fixed crash when opening toolkit outside of workshop.
 - Arfetact melter is now included in pocket workshop.
+
+v1.0.2 -> v1.0.3  
+- Properly severs the connection between the stash and workshop when closing workshop. (In V1.0.2 if you opened the workshop from portable workshop then you would have access to the stash of the last workshop you opened. Even when workshop was opened from inventory.)
+- Weapon parts replacement: The gun's replaced parts will be placed in the inventory where the replacement parts came from. (If you have a barrel in stash and replace gun's barrel the old one will go to stash. If you had it in inventory it will go to inventory.)
