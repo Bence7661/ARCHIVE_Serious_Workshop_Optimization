@@ -27,7 +27,12 @@ It's fine to just install with highest priority.
 - `zzzzz_ui_workshop_repair_patch.script`: Patches weapon part replacement logic.
 
 ## Known issue(s)
-- None
+- Some stacked items: Ammo crafting for example.
+   
+Let's say I need 3 powder 3 bullet and 3 casing.  
+I have 1 of each in player inventory and 2 of each in workshop stash.  
+The crafting window will show 3/3 for all items yet all of them will be red as if you don't have enough of them and crafting is not allowed.  
+This for now only seems to be affecting ammo crafting. For example in artefact crafting it's fine if you have 1 boar leg in stash and 1 in inventory it will correctly recognize everything.
 
 ## Planned
 - None
