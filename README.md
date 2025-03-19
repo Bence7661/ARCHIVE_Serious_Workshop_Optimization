@@ -16,7 +16,9 @@ It's fine to just install with highest priority.
 - Either `Momopate's Barrel Condition Effects Display` or `SERIOUS Weapon Maintain Features 'n fixes` if you have mine installed.
   - Overwrites the monkey patch found in `zzzz_arti_jamming_repairs.script`. NOTE: DOES NOT OVERWRITE FILE. ONLY THE MONKEY PATCH FOUND IN SAID FILE
 - `337- QoL Bundle - Utjan`
-  - File overwritten: `craft_use_low_cond.script` 
+  - File overwritten: `craft_use_low_cond.script`
+- `G.A.M.M.A. Artefacts Reinvention`
+  - File overwritten: `zz_ui_workshop_keep_crafting_window_open.script`
  
 **File overwrites:**
 - `ui_furniture_workshop.script`
@@ -27,12 +29,7 @@ It's fine to just install with highest priority.
 - `zzzzz_ui_workshop_repair_patch.script`: Patches weapon part replacement logic.
 
 ## Known issue(s)
-- Some stacked items: Ammo crafting for example.
-   
-Let's say I need 3 powder 3 bullet and 3 casing.  
-I have 1 of each in player inventory and 2 of each in workshop stash.  
-The crafting window will show 3/3 for all items yet all of them will be red as if you don't have enough of them and crafting is not allowed.  
-This for now only seems to be affecting ammo crafting. For example in artefact crafting it's fine if you have 1 boar leg in stash and 1 in inventory it will correctly recognize everything.
+- None
 
 ## Planned
 - None
@@ -52,3 +49,8 @@ v1.0.2 -> v1.0.3
 
 v1.0.3 -> v1.0.4
 - Fixes craft bugs regarding items with condition. (First I thought this had something to do with artefacts, so this is basically a fix for the "Artefact crafting" bug too.)
+
+v1.0.4 -> v1.0.5
+- Fixes ammo craft bug: There are special components like powder. 15 powders count as 1 item, there can be "partial" items hovewer.
+When the recipe demanded 15 powders 1 casing 1 bullet and player had 10 powders in inventory and 6 powder in stash the crafting system couldn't combine the stashe's item with the one in player's inventory.
+This is now correctly recognized. Spare parts after craft (only in the case of "complex crafting") will get moved to the stash after craft. I ended up calling this "Complex crafting" in code and that's how I'll refer to it in the future.
